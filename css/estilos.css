@@ -1,0 +1,585 @@
+@import url('https://fonts.googleapis.com/css2?family=Assistant:wght@300&display=swap');
+@font-face {font-family: "RubikPixels";src: url("../assets/font/RubikPixels-Regular.ttf")}
+
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+body{
+    font-family: 'Robot', sans-serif;
+    font-weight: 400;
+}
+.header {
+    height:100vh;
+}
+.navegacion{
+    background: rgb(69, 69, 69);
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction:row;
+}
+.contenedorNav {
+    color: #ccccd3;
+    padding: 1.2rem 4.5rem;
+    list-style: none;
+    display: flex;
+    height: 12%;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+.contenedorLogo{
+    width: 25%;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 12px;
+    display: flex;
+    padding-left: 4rem;
+}
+.contenedorLogo img {
+    width: 100px;
+    object-fit: cover;
+    padding: 0%;
+    
+}
+.contenedorLogo h2 {
+    color:#FAFAFA; 
+ 
+}
+
+.itemLista {
+    font-size: 16px;   
+}
+.listaNav li{
+    display:inline;
+    padding:1rem;
+}
+.listaNav .itemLista_blanco a{
+    color: #FAFAFA;
+}
+.listaNav a{
+    color: #babac0;
+    text-decoration: none;
+    position:flex;
+}     
+.listaNav .itemLista_verde a {
+    color: green;
+}
+.listaNav li a:hover{
+        background-color: transparent;
+        font-weight: bold;
+}
+.contenedorConferencia{
+    background:linear-gradient(90deg, rgba(0,0,0,0.47) 0%, rgba(0,0,0,0.47120098039215685) 35%), url("../assets/img/ba1.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 90%;
+    display:flex;
+    justify-content:flex-end;
+    align-items:center;
+    flex-direction:row;
+}    
+.conferencia {
+    padding-right: 4rem;
+    width:50%;
+    height: 50%;
+    flex-direction: column;
+}
+.conferencia h1{
+    color:#FAFAFA;
+    text-align: right;
+    padding-right: 2rem;
+    line-height: 1.5;
+    align-items: end;
+    
+}
+.textoConferencia{
+    align-items: end;
+    font-size:18px;
+    line-height: 1.5;
+    font-weight: 500;
+    color:white;
+    text-align: right;
+    padding-right: 1.2rem;
+}
+.botonesHeader { 
+    padding-left: 19rem;
+    padding-top: 1.5rem;
+}
+.botonesHeader button {
+    background-color: transparent;
+    border:1px solid rgb(180, 180, 180);
+    border-radius: 5px;
+    color: #FAFAFA;
+    display: inline;
+    padding: 0.5rem;
+}
+.botonesHeader button:hover{
+    background-color:green;
+    font-weight: bold;
+    border-radius: 5px;
+    padding: 0.5rem;
+}
+.contenedorOradores { 
+    text-align: left;
+    width: 80%;
+    height:100vh;
+    margin: 0 auto;
+    
+}
+.contenedorOradores h2{
+    text-align: center;
+}
+.contenedorOradores h2 span { 
+    font-size: 10px;
+    color:rgb(110, 109, 109);
+}
+.card{
+    height:100vh;
+    display: inline-flex;
+    background-color:white;
+    width:30%;
+    height:85%;
+    border:1px solid rgb(180, 180, 180);
+    border-radius: 5px;
+    flex-wrap: wrap;
+    flex-direction:row;
+    margin: 1%;
+    
+}
+.card img{
+    width:100%;
+    height: 60%;
+    object-fit: cover;
+   
+}
+.cardBody{
+    margin-top: 5px;
+    margin-left: 15px;
+    margin-bottom: 15px;
+    margin-right: 15px;
+    object-fit: cover;
+}
+.java {
+    background-color: rgb(254, 182, 0);
+    font-size: 10px;
+    display: inline;
+    padding: 3px;
+    border-radius: 5px;
+    object-fit: cover;
+
+}
+.react {
+    background-color: rgb(62, 139, 254);
+    color: #FAFAFA;
+    font-size: 10px;
+    display: inline;
+    padding: 3px;
+    border-radius: 5px;
+    object-fit: cover;
+}
+.negocios {
+    background-color: rgb(102, 102, 102);
+    color: #FAFAFA;
+    font-size: 10px;
+    display: inline;
+    padding: 3px;
+    border-radius: 5px;
+    object-fit: cover;
+}
+.startups {
+    background-color: rgb(205, 8, 57);
+    color: #FAFAFA;
+    font-size: 10px;
+    display: inline;
+    padding: 3px;
+    border-radius: 5px;
+    object-fit: cover;
+}
+.icon{
+    color:rgb(8, 196, 30);
+    font-size: 3rem;
+    position:fixed;
+    bottom:10px;
+    right: 10px;
+}
+.contenedorOctubre{
+    background-color: #2b2929;
+    color: #FAFAFA;
+    display: flex;
+    height: 70vh;
+    justify-content: space-between;
+    border-top: 1px solid #ccccd3;
+}
+.contenedorOctubre img{
+    width: 100%;
+    height: 100%;
+    object-fit:cover;
+    border-right: 1.5px solid #ccccd3;
+}
+.textoOctubre{
+    display: flex;
+    padding: 1rem;
+    width: 50%;
+    height: 100%;
+    flex-direction: column;
+    line-height: 1.5rem;
+}
+.textoOctubre h2 {
+    font-size:18px ;
+    text-align: left;
+    justify-content: space-around;
+
+}
+.textoOctubre p {
+    font-size: 12px;
+    text-align: left;
+    justify-content: space-around;
+    padding-bottom: 1rem;
+}
+.textoOctubre button {
+    background-color: transparent;
+    border:1px solid rgb(180, 180, 180);
+    border-radius: 5px;
+    color: #FAFAFA;
+    display: flex;
+    padding: 0.5rem;
+    width:fit-content;
+}
+.textoOctubre button:hover{
+    background-color:green;
+    color:#2e3032;
+    font-weight: bold;
+    border-radius: 5px;
+    padding: 0.5rem;
+    
+}
+.textoForm{
+    text-align: center;
+    font-size: 18px;
+}
+.textoForm span{
+    font-size: 10px;
+    color:rgb(110, 109, 109)
+}
+.textoForm br {
+    font-size: 12px;
+    font-weight: bold;
+    
+}
+.textoForm h3{
+    font-size: 10px;
+    padding-bottom: 0.5rem;
+}
+.formulario{
+    width:60%;
+	padding:16px;
+	margin:auto;
+}
+.formulario input[type="text"]{
+	width: 48%;
+	padding:5px 10px;
+	border:1px solid rgb(102, 102, 102);
+	border-radius:5px;
+	margin:auto;
+	display:inline-block;
+    margin: 6.1px;
+
+}
+.coment{
+    padding: 5px;
+    margin: 5px;
+    font-size: medium;
+    font-family: 'Robot' sans-serif;
+}
+.textarea{
+	width:100%;
+	height:100px;
+	border:1px solid rgb(102, 102, 102);
+	border-radius:5px;
+	margin:9px -0.5px;
+	resize:none;
+	display:block;
+}
+.formulario p {
+    font-size: 12px;
+    text-align: left;
+    color: rgb(102, 102, 102);
+}
+.botForm input {
+    width: 100%;
+    background-color: rgb(159, 217, 83);
+    border-radius: 5px;
+    color: #FAFAFA;
+    display: inline;
+    text-align: center;
+    padding: 8px;
+    margin-top: 4px;
+    box-shadow: none;
+    border: none;
+    font-weight: bold;
+
+        
+}
+.footer {
+    height: 13vh;
+}
+.footerMenu{
+    height: 100%;
+    background:linear-gradient(90deg, rgba(29,64,74,1) 0%, rgba(27,72,86,1) 100%);
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction:row;
+    padding: 0 260px;
+    align-items: center;
+}
+.footerMenu a{
+    color: #FAFAFA;
+    justify-content:space-between;
+    text-decoration: none;
+    display: inline;
+    margin-left: 40px;
+    font-size: 12px;
+    text-justify:inter-word;
+
+}
+.alum{
+    padding:0.50rem;
+    font-size: 9px;
+    align-items: end;
+    text-align: center;
+    background-color: #2b2929;
+    color: #babac0;
+}
+
+/*celular*/
+@media (max-width: 767px)   {
+.contenedorNav{
+    flex-direction: column;
+    height: initial;
+    align-items: center;
+}
+.contenedorLogo{
+    width: 100%;
+    align-items: center;
+    font-size: 10px;
+    flex-direction: column;
+}
+.contenedorLogo img{
+    padding-right: 2rem;
+    width: 150px;
+    
+
+}
+.contenedorLogo h2{
+    padding-right: 2rem;
+}
+.listaNav{
+    margin-right:2.5rem;
+    margin-left: 2.5rem;
+    text-align: center;
+    line-height: 2rem;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contenedorConferencia{
+    justify-content:center;
+    align-items:center;
+    flex-direction:column;
+    height: 50%;
+}
+.conferencia {
+    padding-right: 0;
+    width:100%;
+    height: 100%;
+    flex-direction: column;
+}
+.conferencia h1{
+    padding-top:3rem;
+    align-items: center;
+    text-align: center;
+    line-height: 1px;
+}
+.textoConferencia{
+    font-size:12px;
+    text-align: center;
+    padding:1rem;
+}
+.botonesHeader { 
+    padding-left: 3rem;
+    padding-top: 0;
+    
+}
+.contenedorOradores { 
+    flex-direction:column;
+    height: 50%;
+}
+.textoOctubre h2 {
+    font-size:13px ;
+    }
+.textoOctubre p {
+    font-size: 9px;
+    }   
+.card{
+    display: flex;
+    flex-direction:column;
+    margin: 1rem;
+    width: 100%;   
+}
+.contenedorOctubre{
+    flex-direction: column;
+}
+.contenedorOctubre img{
+    height: 100%;
+}
+.textoOctubre{
+    padding-bottom: 1rem;
+    height: 100%;
+    text-align: left;
+    width: 100%;
+}
+.textoOctubre button {
+    align-items: center;
+}
+.textoOctubre button:hover{
+    padding: 0;
+    align-items: center;
+ }
+
+.formulario{
+    width: 100%;
+    align-items: center;
+    margin: auto 0;
+    padding: 1rem;
+    align-items: center;
+    
+}
+.formulario input[type="text"]{
+    width: 100%;
+    margin: 0,2rem; 
+}
+
+.formulario p {
+    margin: auto;
+}
+.footer {
+    padding-top: 0.5rem;
+    height: 35vh;
+}
+.footerMenu{
+    flex-direction:column;
+    padding: 0;
+    
+}
+.footerMenu a{
+    margin-left: 0;
+    line-height: 1.5rem;
+}
+
+}
+
+
+/*tablet*/
+@media (min-width:768px) and (max-width:1023px) {
+    .contenedorNav{
+        flex-direction: column;
+        height: initial;
+        align-items: center;
+    }
+    .contenedorLogo{
+        font-size: 10px;
+        margin: 0;
+    }
+    .contenedorLogo h2{
+        padding: 0;
+    }
+    .listaNav{
+        padding: 0;
+        word-spacing: 2rem;
+        display: flex;
+    }
+    .contenedorConferencia{
+        justify-content:left;
+        align-items:left;
+        flex-direction:column;
+        height: 75%
+    }
+    .conferencia {
+        padding: 3rem;
+        width:100%;
+        height: 100%;
+        flex-direction: column;
+    }
+    .conferencia h1{
+        padding-top:10rem;
+        align-items:center;
+        text-align:right;
+        line-height: 1px;
+}
+    .textoConferencia{
+        font-size:12px;
+        text-align: right;
+        padding:1rem;
+        margin-left: 4.4rem;
+    }
+    .botonesHeader { 
+        padding-left: 25rem;
+        padding-top: 0;
+    }
+    .contenedorOradores { 
+        width: 100%;
+        height:initial;
+    }
+    .card img{
+        width: 183px;
+        height:183px;
+    }
+    .contenedorOctubre{
+        height: inherit;
+        border-bottom:0;
+    }
+    .contenedorOctubre img{
+        width: 400px;
+        height: 300px;
+        margin: 0;
+    }
+    .textoOctubre{
+        width: 100%;
+    }
+
+    .formulario{
+        width: 100%;
+        align-items: center;
+        margin: auto 0;
+        padding: 1rem;
+        align-items: center;
+        
+    }
+    .formulario input[type="text"]{
+        width: 100%;
+        margin: 0,2rem; 
+    }
+
+    .formulario p {
+        margin: auto;
+    }
+    .footer {
+        padding-top: 0.5rem;
+        height: 30vh;
+    }
+    .footerMenu{
+        flex-direction:column;
+        padding: 0;
+    }
+    .footerMenu a{
+        margin-left: 0;
+        line-height: 1.5rem;
+    }
+}
+
+/*escritorio*/
+@media screen and (min-width:1401px) {
+}
